@@ -56,6 +56,10 @@ php artisan key:generate
 ```
 apt install php8.1-sqlite3
 ```
+- Gere a migration da table jobs que vai trabalhar nas filas de email:
+```
+php artisan queue:table
+```
 - Ainda dentro do conteiner crie as tabelas usando as migrations:
 ```
 php artisan migrate
