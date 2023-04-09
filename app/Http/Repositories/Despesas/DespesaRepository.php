@@ -24,6 +24,6 @@ class DespesaRepository implements IDespesaRepository
 
     public function findAll(): object
     {
-        return Despesa::all();
+        return Despesa::all()->where('user_id', auth()->user()->id);
     }
 }
