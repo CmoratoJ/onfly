@@ -48,6 +48,10 @@ docker-compose up -d
 ```
 docker exec -it nginx-onfly bash
 ```
+- Rode o comando para gerar a pasta vendor e criar o autoload
+```
+composer install
+```
 - Dentro do container precisamos realizar algumas configurações, a primeira é gerar a chave para o laravel rodando o comando
 ```
 php artisan key:generate
@@ -55,10 +59,6 @@ php artisan key:generate
 - Agora vamos instalar o php-sqlite3 de acordo a nossa versão do php para a execução dos testes automatizados rodando o comando
 ```
 apt install php8.1-sqlite3
-```
-- Gere a migration da table jobs que vai trabalhar nas filas de email:
-```
-php artisan queue:table
 ```
 - Ainda dentro do conteiner crie as tabelas usando as migrations:
 ```

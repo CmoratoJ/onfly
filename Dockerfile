@@ -10,6 +10,4 @@ RUN apt update; \
     apt install vim -y; \
     apt install sqlite3 -y;
 
-RUN composer install;
-
 EXPOSE 80
