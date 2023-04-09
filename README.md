@@ -19,6 +19,10 @@
 ```
 git clone https://github.com/CmoratoJ/onfly.git
 ```
+- Acesse o diretório onfly:
+```
+cd onfly/  
+```
 - Agora que os arquivos foram devidamente baixados para o seu diretório, configure o seu arquivo .env com base no arquivo .env.example:
 ```
 cp .env.example .env
