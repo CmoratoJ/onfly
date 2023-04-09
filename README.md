@@ -17,7 +17,7 @@
 
 - Acesse algum diretório de sua preferência e baixe o projeto, usando:
 ```
-git clone https://github.com/CmoratoJ/onfly.git .
+git clone https://github.com/CmoratoJ/onfly.git
 ```
 - Agora que os arquivos foram devidamente baixados para o seu diretório, configure o seu arquivo .env com base no arquivo .env.example:
 ```
@@ -58,8 +58,10 @@ php artisan key:generate
 ```
 - Agora vamos instalar o php-sqlite3 de acordo a nossa versão do php para a execução dos testes automatizados rodando o comando
 ```
-apt install php8.1-sqlite3
+apt install php8.1-sqlite3 -y
 ```
+- Pressione enter quando solicitado durante a instalação do php-sqlite3
+
 - Ainda dentro do conteiner crie as tabelas usando as migrations:
 ```
 php artisan migrate
