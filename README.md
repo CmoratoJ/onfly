@@ -71,6 +71,11 @@ apt install php8.1-sqlite3 -y
 php artisan migrate
 ```
 
+- Para executar os testes automatizados basta executar o comando:
+```
+php artisan test
+```
+
 - Lembre-se de deixar um "[worker](https://laravel.com/docs/10.x/queues#running-the-queue-worker)" rodando para o envio de e-mail assíncrono 🚨
 ```
 php artisan queue:work
